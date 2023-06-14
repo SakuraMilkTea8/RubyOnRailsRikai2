@@ -1,7 +1,7 @@
 
 require 'spec_helper'
 
-describe Entry do
+RSpec.describe Entry, type: :model do
   describe 'association' do
     it "has comments" do
       expect(Entry.new.comments.count).to eq 0

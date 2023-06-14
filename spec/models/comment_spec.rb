@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Comment do
+RSpec.describe Comment, type: :model do
   describe 'association' do
     let!(:entry) { Entry.create(text: "新しいMacBook Proを買いました！") }
     context "not associated" do
